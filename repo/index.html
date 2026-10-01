@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>정용석 — 제약·바이오 제조 QC/QA 포트폴리오</title>
+<style>
+:root{
+  --ink:#1D242C; --ink-2:#59626C; --ink-3:#8892A0; --paper:#F6F7F9; --card:#FFFFFF;
+  --line:#E4E8EE; --accent:#2557D6; --accent-lt:#EAF0FE;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
+.wrap{max-width:920px;margin:0 auto;padding:56px 24px 80px}
+header{margin-bottom:36px}
+header p.kicker{color:var(--accent);font-weight:700;font-size:13px;margin:0 0 10px}
+header h1{font-size:32px;letter-spacing:-.03em;margin:0 0 12px;font-weight:800}
+header p.lede{color:var(--ink-2);max-width:64ch;margin:0 0 18px}
+.badges{display:flex;gap:8px;flex-wrap:wrap}
+.badge{font-size:12px;font-weight:600;background:var(--accent-lt);color:var(--accent);padding:4px 10px;border-radius:99px}
+.note{background:#FFF8E6;border:1px solid #F1DFA8;border-radius:10px;padding:14px 16px;font-size:13px;color:#6B5518;margin-bottom:36px}
+.note b{color:#4A3A0F}
+.grid{display:grid;gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px 24px;box-shadow:0 1px 2px rgba(20,30,50,.04);text-decoration:none;color:inherit;display:block;transition:border-color .15s,box-shadow .15s}
+.card:hover{border-color:var(--accent);box-shadow:0 4px 16px rgba(37,87,214,.1)}
+.card .top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:6px}
+.card h2{font-size:17px;margin:0;letter-spacing:-.01em}
+.card .co{font-size:12px;color:var(--ink-3);font-weight:600;white-space:nowrap}
+.card p{margin:0;color:var(--ink-2);font-size:13.5px}
+.card .tags{margin-top:10px;display:flex;gap:6px;flex-wrap:wrap}
+.card .tags span{font-size:11px;background:var(--paper);color:var(--ink-3);padding:2px 8px;border-radius:99px;border:1px solid var(--line)}
+footer{margin-top:48px;padding-top:24px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-3)}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="kicker">PHARMA / BIO MANUFACTURING QC·QA PORTFOLIO</p>
+    <h1>지원 직무별 AI 활용 포트폴리오 모음</h1>
+    <p class="lede">제약·바이오 제조업 QC/QA/생산 직무에 지원하며, 공고의 실제 업무를 분석해 직접 설계하고 AI 코딩 도구로 구현한 인터랙티브 웹 도구 6개입니다. 계산식·규칙은 공개된 규정과 손계산으로 검산했고, 각 도구는 열 때마다 자체 검산이 자동으로 돌아갑니다.</p>
+    <div class="badges">
+      <span class="badge">Vanilla HTML·CSS·JS</span>
+      <span class="badge">외부 의존성 없음</span>
+      <span class="badge">자체 검산 내장</span>
+    </div>
+  </header>
+
+  <div class="note"><b>읽기 전에</b> — 모든 도구의 예시 데이터·규격값·가상 시나리오는 실제 회사의 사내 데이터가 아닙니다. 계산 로직과 통계 규칙은 AI 코딩 도구로 구현했고, 업무 분해·방향 설정·검증은 직접 했습니다. 자세한 내용은 <a href="https://github.com/">README</a>를 확인하세요.</div>
+
+  <div class="grid">
+    <a class="card" href="tools/hanmi-pharm-ds-console/index.html">
+      <div class="top"><h2>DS 생산 운영 콘솔</h2><span class="co">한미약품 · 평택 DS 생산</span></div>
+      <p>배양·정제 IPC를 관리도 규칙으로 판정하고, 설비 Qualification·정비 우선순위·GMP 문서 감사추적까지 잇는 콘솔.</p>
+      <div class="tags"><span>IPC 관리도</span><span>Qualification</span><span>ALCOA+ 감사추적</span><span>한/영 토글</span></div>
+    </a>
+    <a class="card" href="tools/btgen-qa-console/index.html">
+      <div class="top"><h2>품질보증 운영 콘솔</h2><span class="co">비티젠 · QA Operation/System</span></div>
+      <p>일탈/OOS·CAPA·고객불만·제품회수·공급업체·문서관리를 서로 연결한 QA 워크플로 콘솔.</p>
+      <div class="tags"><span>일탈→CAPA 연계</span><span>회수 등급 규정</span><span>문서 개정관리</span></div>
+    </a>
+    <a class="card" href="tools/cosmax-bio-qc-workbench/index.html">
+      <div class="top"><h2>품질분석 워크벤치</h2><span class="co">코스맥스바이오 · 품질분석(기기분석)</span></div>
+      <p>HPLC 피크 면적으로 함량을 계산하고, 시스템적합성·영양성분 표시값·성적서 발행·로트 경향까지 잇는 도구.</p>
+      <div class="tags"><span>검량선 회귀</span><span>USP 계산식</span><span>표시기준 반올림 규칙</span></div>
+    </a>
+    <a class="card" href="tools/hk-innon-qc-pv-radar/index.html">
+      <div class="top"><h2>품질관리·PV 레이더</h2><span class="co">HK이노엔 · 오송 품질관리</span></div>
+      <p>제품·제형별 CQA·CPP 매핑, 분석장비·HPLC 컬럼 관리, PV·안정성시험 데이터를 정리한 레이더.</p>
+      <div class="tags"><span>CQA·CPP 매핑</span><span>제형별 시험항목</span></div>
+    </a>
+    <a class="card" href="tools/dong-a-st-validation-cpv-radar/index.html">
+      <div class="top"><h2>밸리데이션·CPV 레이더</h2><span class="co">동아ST · 밸리데이션</span></div>
+      <p>국내외 GMP 밸리데이션 규정 개정 이력과 핵심 개념을 색인검색하고, 실사 대비 체크리스트로 연결한 레이더.</p>
+      <div class="tags"><span>규정 이력 추적</span><span>실사 대비 체크리스트</span></div>
+    </a>
+    <a class="card" href="tools/generic-gmp-validation-radar/index.html">
+      <div class="top"><h2>GMP 밸리데이션 레이더</h2><span class="co">범용 · 회사명 없는 재사용 버전</span></div>
+      <p>특정 회사에 맞추기 전, GMP 밸리데이션 규정·개념을 정리한 원형 버전입니다.</p>
+      <div class="tags"><span>범용 템플릿</span></div>
+    </a>
+  </div>
+
+  <footer>
+    정용석 · 경북대학교 응용생명과학부 · 2026년 하반기 제약·바이오 제조 QC/QA 공채 지원용<br>
+    각 도구의 소스는 <code>tools/&lt;도구명&gt;/index.html</code> 에 있습니다.
+  </footer>
+</div>
+</body>
+</html>
